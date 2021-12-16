@@ -1,10 +1,7 @@
 package com.bestbuy.tasks;
 
-import com.bestbuy.driver.SeleniumWebDriver;
 import com.bestbuy.globalVar.Global;
-import com.bestbuy.interactions.ImplicitWait;
 import com.bestbuy.userinterface.*;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
@@ -15,10 +12,6 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Visibility;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
 import net.serenitybdd.screenplay.waits.Wait;
-import net.thucydides.core.annotations.locators.WaitForWebElements;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GuardarProducto implements Task {
 
@@ -43,7 +36,6 @@ public class GuardarProducto implements Task {
             actor.attemptsTo(
                     Click.on(HomeUI.BTN_CERRAR_MODAL)
             );
-
 
 
         actor.attemptsTo(

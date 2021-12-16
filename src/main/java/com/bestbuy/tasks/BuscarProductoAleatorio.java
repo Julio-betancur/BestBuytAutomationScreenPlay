@@ -1,6 +1,5 @@
 package com.bestbuy.tasks;
 
-
 import com.bestbuy.interactions.ClickRandom;
 import com.bestbuy.userinterface.HomeUI;
 import com.bestbuy.userinterface.PaisesUI;
@@ -43,7 +42,7 @@ public class BuscarProductoAleatorio implements Task {
                 Enter.theValue(producto).into(HomeUI.TXT_BARRA_BUSQUEDA),
                 Click.on(HomeUI.BTN_BUSCAR_LUPA),
                 ClickRandom.on()
-                );
+        );
 
     }
 }

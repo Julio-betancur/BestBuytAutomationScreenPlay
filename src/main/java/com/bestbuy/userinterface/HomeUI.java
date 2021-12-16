@@ -9,5 +9,5 @@ public class HomeUI {
     public static final Target TXT_BARRA_BUSQUEDA = Target.the("Campo de texto para copiar producto").locatedBy("//input[@id='gh-search-input']");
     public static final Target BTN_BUSCAR_LUPA = Target.the("Boton para realizar busqueda").locatedBy("//button[@class='header-search-button']");
 
-    public static final Target BTN_CATEGORIA_VIDEOGAMES = Target.the("Boton para entrar a la categoria videogames").locatedBy("(//a[@class='se-link-wrapper'])[4]");
+    public static final Target BTN_CATEGORIA_TABLETS= Target.the("Boton para entrar a la categoria tablets").locatedBy("(//a[@class='se-link-wrapper'])[7]");
 }
