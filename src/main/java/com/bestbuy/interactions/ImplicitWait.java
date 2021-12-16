@@ -25,6 +25,6 @@ public class ImplicitWait  implements Interaction {
     }
 
     public static Performable tiempo(int segundos){
-        return Instrumented.instanceOf(ImplicitWait.class).withProperties();
+        return Instrumented.instanceOf(ImplicitWait.class).withProperties(segundos);
     }
 }

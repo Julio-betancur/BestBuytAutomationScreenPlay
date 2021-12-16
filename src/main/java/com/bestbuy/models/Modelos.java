@@ -1,16 +1,16 @@
 package com.bestbuy.models;
 
 public class Modelos {
-    private String dataInjection;
+    private String busqueda;
 
     public Modelos(){
     }
 
-    public String getDataInjection(){
-        return dataInjection;
+    public String getBusqueda() {
+        return busqueda;
     }
 
-    public void setDataInjection(String dataInjection){
-        this.dataInjection = dataInjection;
+    public void setBusqueda(String busqueda) {
+        this.busqueda = busqueda;
     }
 }

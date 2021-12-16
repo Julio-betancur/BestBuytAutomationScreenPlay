@@ -23,8 +23,8 @@ public class ClickRandom implements Interaction {
 
         Random random = new Random();
         //Creamos dos listas con WebElements
-        List<WebElementFacade> listaBtnVideos = ListaProductosUI.BTN_PRODUCTO.resolveAllFor(actor);
-        List<WebElementFacade> listaLblVideos = ListaProductosUI.BTN_PRODUCTO.resolveAllFor(actor);
+        List<WebElementFacade> listaBtnVideos = ListaProductosUI.BTN_PRODUCTO_ALEATORIO.resolveAllFor(actor);
+        List<WebElementFacade> listaLblVideos = ListaProductosUI.BTN_PRODUCTO_ALEATORIO.resolveAllFor(actor);
 
         int randomNumber = random.nextInt(listaBtnVideos.size()); //Generamos numero al azar
         Global.randomModel = listaLblVideos.get(randomNumber).getText();
