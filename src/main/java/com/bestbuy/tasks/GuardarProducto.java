@@ -2,6 +2,7 @@ package com.bestbuy.tasks;
 
 import com.bestbuy.globalVar.Global;
 import com.bestbuy.userinterface.*;
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
@@ -12,6 +13,7 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Visibility;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
 import net.serenitybdd.screenplay.waits.Wait;
+import net.thucydides.core.annotations.Screenshots;
 
 public class GuardarProducto implements Task {
 
@@ -25,11 +27,13 @@ public class GuardarProducto implements Task {
         return Instrumented.instanceOf(GuardarProducto.class).withProperties(busqueda);
     }
 
+    @Screenshots(onlyOnFailures=true)
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(PaisesUI.BTN_SELECCION_PAIS)
         );
+
 
         //Validamos si aparece el modal y lo cerramos
         if (Visibility.of(HomeUI.BTN_CERRAR_MODAL).viewedBy(actor).asBoolean())
@@ -54,6 +58,7 @@ public class GuardarProducto implements Task {
                 Wait.until(
                         WebElementQuestion.the(ListaGuardadosUI.LBL_PRODUCTO_GUARDADO) , WebElementStateMatchers.isEnabled()
                 ).forNoLongerThan(10).seconds()
+
         );
 
     }

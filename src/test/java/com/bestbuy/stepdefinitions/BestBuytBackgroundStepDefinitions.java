@@ -13,6 +13,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
+import net.thucydides.core.annotations.BlurScreenshots;
 
 import java.io.IOException;
 import java.util.List;
@@ -24,6 +25,7 @@ public class BestBuytBackgroundStepDefinitions {
     public void before() throws IOException {
         OnStage.setTheStage(new OnlineCast());
     }
+
 
     @When("^ella busca un producto y lo guarda$")
     public void ellaBuscaUnProductoYLoGuarda(List<Modelos> mod) {
