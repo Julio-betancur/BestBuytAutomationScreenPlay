@@ -4,7 +4,6 @@ import com.bestbuy.globalVar.Global;
 import com.bestbuy.models.Modelos;
 import com.bestbuy.tasks.GuardarProducto;
 import com.bestbuy.userinterface.ListaGuardadosUI;
-import com.bestbuy.userinterface.ProductoUI;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,7 +12,6 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
-import net.thucydides.core.annotations.BlurScreenshots;
 
 import java.io.IOException;
 import java.util.List;

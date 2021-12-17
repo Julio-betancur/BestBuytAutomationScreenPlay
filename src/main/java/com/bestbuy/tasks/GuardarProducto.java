@@ -2,7 +2,6 @@ package com.bestbuy.tasks;
 
 import com.bestbuy.globalVar.Global;
 import com.bestbuy.userinterface.*;
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;

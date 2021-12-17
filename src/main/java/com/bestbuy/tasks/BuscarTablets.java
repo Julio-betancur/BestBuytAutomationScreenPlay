@@ -1,7 +1,6 @@
 package com.bestbuy.tasks;
 
 import com.bestbuy.globalVar.Global;
-import com.bestbuy.interactions.ImplicitWait;
 import com.bestbuy.userinterface.HomeUI;
 import com.bestbuy.userinterface.ListadoTabletsUI;
 import com.bestbuy.userinterface.PaisesUI;
@@ -12,7 +11,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.questions.Visibility;
-import org.openqa.selenium.Keys;
+
 
 public class BuscarTablets implements Task {
 

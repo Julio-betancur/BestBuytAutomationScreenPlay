@@ -1,9 +1,7 @@
 package com.bestbuy.stepdefinitions;
 
-
 import com.bestbuy.globalVar.Global;
-import com.bestbuy.models.Modelos2;
-import com.bestbuy.tasks.BuscarTablets;
+import com.bestbuy.tasks.BuscarProducto;
 import com.bestbuy.userinterface.ProductoUI;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
@@ -13,10 +11,10 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
-import java.io.IOException;
-import java.util.List;
 
-public class BestBuyHibridoStepDefinitions {
+import java.io.IOException;
+
+public class BestBuyFailStepDefinitions {
 
     //Before cucumber: define las variables de usuario e instancia al actor
     @Before
@@ -24,15 +22,15 @@ public class BestBuyHibridoStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-
-    @When("^ella ingresa a la seccion de tablets y selecciona una marca$")
-    public void ella_ingresa_a_la_seccion_de_tablets_y_selecciona_una_Microsoft(List<Modelos2> mod2) {
-        OnStage.theActorInTheSpotlight().attemptsTo(BuscarTablets.on(mod2.get(0).getMarca()));
+    @When("^ella ingresa un (.*), da clic en la lupa$")
+    public void ellaIngresaUnScooterDaClicEnLaLupa(String articulo) {
+        OnStage.theActorInTheSpotlight().attemptsTo(BuscarProducto.on(articulo));
     }
 
-    @Then("^ella podra ver tablets de esa marca$")
-    public void ella_podra_ver_tablets_de_esa_Microsoft() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(WebElementQuestion.the(ProductoUI.LBL_PRODUCTO.of()), WebElementStateMatchers.containsText(Global.randomModel)));
+
+    @Then("^ella podra ver el (.*) buscado$")
+    public void ellaPodraVerElScooterBuscado(String articulo) {
+
     }
 
 }

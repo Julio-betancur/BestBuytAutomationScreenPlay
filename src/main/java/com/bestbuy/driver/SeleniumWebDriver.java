@@ -1,13 +1,10 @@
 package com.bestbuy.driver;
 
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.UnexpectedAlertBehaviour;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
 
-import java.util.Map;
 
 public class SeleniumWebDriver {
     public static WebDriver driver;
