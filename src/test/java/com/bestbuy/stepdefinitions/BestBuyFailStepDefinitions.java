@@ -1,17 +1,11 @@
 package com.bestbuy.stepdefinitions;
 
-import com.bestbuy.globalVar.Global;
 import com.bestbuy.tasks.BuscarProducto;
-import com.bestbuy.userinterface.ProductoUI;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
-import net.serenitybdd.screenplay.questions.WebElementQuestion;
-
 import java.io.IOException;
 
 public class BestBuyFailStepDefinitions {
